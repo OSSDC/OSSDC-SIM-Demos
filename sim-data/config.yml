@@ -1,0 +1,5 @@
+headless: false
+read_only: false
+api_hostname: "*"
+api_port: 8181
+cloud_url: "https://race.ossdc.org"
