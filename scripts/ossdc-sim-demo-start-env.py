@@ -40,7 +40,7 @@ childProc = []
 
 env = Env()
 
-MULTI_EGO_COUNT = 1
+MULTI_EGO_COUNT = 2
 
 mainProc = []
 cmdStrList = []
