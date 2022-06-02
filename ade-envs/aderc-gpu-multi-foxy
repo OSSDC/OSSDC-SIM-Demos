@@ -1,0 +1,12 @@
+# For Intel CPU and Joystic
+# export ADE_DOCKER_RUN_ARGS="--network ade${EGO_NR} --cap-add=SYS_PTRACE --device /dev/input/js0 --device /dev/dri -v ${HOME}/.Xauthority:${HOME}/.Xauthority:ro -e XAUTHORITY=${HOME}/.Xauthority -e RMW_IMPLEMENTATION=rmw_cyclonedds_cpp --publish 909${EGO_NR}:9090 --publish 888${EGO_NR}:8888"
+
+# For AMD CPU and no Joystic
+export ADE_DOCKER_RUN_ARGS="--network ade${EGO_NR} --cap-add=SYS_PTRACE -v ${HOME}/.Xauthority:${HOME}/.Xauthority:ro -e XAUTHORITY=${HOME}/.Xauthority -e RMW_IMPLEMENTATION=rmw_cyclonedds_cpp -v /dev/shm:/dev/shm --publish 909${EGO_NR}:9090 --publish 888${EGO_NR}:8888 --publish 887${EGO_NR}:8870"
+
+export ADE_GITLAB=gitlab.com
+export ADE_REGISTRY=registry.gitlab.com
+export ADE_IMAGES="
+  registry.gitlab.com/autowarefoundation/autoware.auto/autowareauto/amd64/ade-foxy:master
+  registry.gitlab.com/autowarefoundation/autoware.auto/autowareauto/amd64/binary-foxy:master
+"
