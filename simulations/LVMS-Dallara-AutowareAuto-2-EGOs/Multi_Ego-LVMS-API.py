@@ -86,7 +86,7 @@ if SIMULATOR_BRIDGE_HOST_2 is not None:
 
 # Set a new daytime for the simulator, Time of day can be set from 0 ... 24
 print("Current time:", sim.time_of_day)
-sim.set_time_of_day(11.8)
+sim.set_time_of_day(18)
 print(sim.time_of_day)
 
 # The simulator can be run for a set amount of time.
