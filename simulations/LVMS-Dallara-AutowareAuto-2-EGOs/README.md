@@ -40,9 +40,15 @@ sh OSSDC-SIM-v1-Linux/run-OSSDC-SIM-v1.sh
 
 # Select and launch the OSSDC SIM API simulation
 
-# Initialize the map and position the EGOs
+# Initialize the map and position the EGOs, set simulator host and bridge IPs
 
 cd ${HOME}/adehome
+
+export OSSDC__SIMULATOR_HOST=127.0.0.1
+
+export OSSDC__SIMULATOR_BRIDGE_HOST_1=127.0.0.1
+
+export OSSDC__SIMULATOR_BRIDGE_HOST_2=127.0.0.1
 
 python3 OSSDC-SIM-Demos/simulations/LVMS-Dallara-AutowareAuto-2-EGOs/Multi_Ego-LVMS-API.py
 
