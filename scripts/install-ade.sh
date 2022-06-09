@@ -6,6 +6,6 @@ wget https://gitlab.com/ApexAI/ade-cli/-/jobs/1341322851/artifacts/raw/dist/ade+
 mv ade+x86_64 ade
 chmod +x ade
 cp ade ~/.local/bin
-which ade
+which ~/adehome/ade
 
-ade update-cli
+~/adehome/ade update-cli
