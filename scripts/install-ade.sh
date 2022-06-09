@@ -1,3 +1,21 @@
+python3 -m pip install --upgrade pip
+
+# Install docker
+
+sudo apt install docker.io -y
+
+sudo usermod -aG docker $USER
+newgrp docker
+
+#check docker is working
+docker run hello-world
+
+# add networks for AutowareAuto EGO 1 and 2
+docker network create ade0
+docker network create ade1
+
+# install ADE
+
 mkdir ~/adehome
 cd ~/adehome
 touch .adehome
