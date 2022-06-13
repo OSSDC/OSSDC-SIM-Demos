@@ -284,7 +284,7 @@ sim.set_time_of_day(11.8)
 # The simulator can be run for a set amount of time.
 # time_limit is optional and if omitted or set to 0, then the simulator will run indefinitely
 # Create Steps for running the simulation step by step
-step_time = 0.1                     # Simulation Timestep in s
+step_time = 1                     # Simulation Timestep in s
 duration = 100                      # Duration of Simulation in s
 step_rate = int(1.0 / step_time)
 steps = duration * step_rate        # Calculate total of time steps
