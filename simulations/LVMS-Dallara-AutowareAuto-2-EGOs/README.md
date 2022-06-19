@@ -94,3 +94,13 @@ source install/setup.bash
 bash ../OSSDC-SIM-Demos/scripts/replay-autoware-auto.sh
 cp /tmp/path ../OSSDC-SIM-Demos/recorded-tracks/new_track.csv
 </pre>
+
+# Run OSSDC Race Control Center
+
+<pre>
+cd ~/adehome/OSSDC-SIM-Demos/race-control
+python race-controller.py
+</pre>
+
+Use the Single_Ego-LVMS-API-race-control.py script which sends the data to race control.
+Update the UDP_IP_ADDRESS to point to where the race-controller.py script is running.
