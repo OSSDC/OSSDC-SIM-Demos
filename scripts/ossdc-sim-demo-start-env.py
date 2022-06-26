@@ -40,13 +40,15 @@ childProc = []
 
 env = Env()
 
-MULTI_EGO_COUNT = 2
+MULTI_EGO_COUNT = 5
 
 mainProc = []
 cmdStrList = []
 for i in range(MULTI_EGO_COUNT):
     egoNr = i
-    cmdStrList.append('sh -c "EGO_NR='+str(egoNr)+' ~/adehome/ade --name ade'+str(egoNr)+' --rc ../OSSDC-SIM-Demos/ade-envs/aderc-gpu-multi-foxy start --update"')
+    # cmdStrList.append('sh -c "EGO_NR='+str(egoNr)+' ~/adehome/ade --name ade'+str(egoNr)+' --rc ../OSSDC-SIM-Demos/ade-envs/aderc-gpu-multi-foxy start --update"')
+    cmdStrList.append('sh -c "EGO_NR='+str(egoNr)+' ~/adehome/ade --name ade'+str(egoNr)+' --rc ../OSSDC-SIM-Demos/ade-envs/aderc-gpu-multi-foxy-built start --update"')
+    # cmdStrList.append('sh -c "EGO_NR='+str(egoNr)+' ~/adehome/ade --name ade'+str(egoNr)+' --rc ../OSSDC-SIM-Demos/ade-envs/aderc-gpu-multi-galactic start --update"')
     print('Start cmd:',cmdStrList[i])
     mainProc.append(pexpect.spawn(cmdStrList[i]))
     # mainProc1.logfile = sys.stdout
