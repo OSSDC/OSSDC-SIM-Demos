@@ -67,16 +67,7 @@ state = lgsvl.AgentState()
 state.transform = spawns[0]
 
 
-# sensorsConfig = "bca640a7-4b05-4df6-9284-98b3cd18dd06" # Dallara e768f24a-2d51-41b2-8976-52d2ed4178a5 Vehicle with OSSDC AutowareAuto AVP config
-# sensorsConfig = "1223a53e-d475-4803-a0ab-7c1f61fc4cc8" # AWFLexus2016RXHybrid b22952f6-f82b-4eeb-ac28-2067e88569a1 - OSSDC AutowareAuto AVP 1223a53e-d475-4803-a0ab-7c1f61fc4cc8
 sensorsConfig = "5ab8175f-e1f1-427c-a86e-e882fa842977"  # AWFLexus2016RXHybrid b22952f6-f82b-4eeb-ac28-2067e88569a1 - Autoware.Auto
-# sensorsConfig = "d083ee23-2511-466c-b439-c845f741e966" # DallaraIL15_VPP_GAIA aef12d04-6042-4926-ae49-21e79ee4852d GSVL Public
-# sensorsConfig = "fc12418e-1310-4054-b122-dad3b103d2e5"
-# sensorsConfig = "e00f083c-b403-475d-b085-8810b8437e26"
-# sensorsConfig = "b22952f6-f82b-4eeb-ac28-2067e88569a1"
-
-# sensorsConfig = "e1730783-751a-453f-ad89-3c54e055876d"
-
 
 ego = sim.add_agent(name = sensorsConfig, agent_type = lgsvl.AgentType.EGO, state = state)
 
